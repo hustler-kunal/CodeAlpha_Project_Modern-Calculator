@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>NeoCalc - Modern Calculator</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/992/992700.png">
+</head>
+<body>
+  <div class="theme-toggle">
+    <label>
+      <input type="checkbox" id="themeSwitch" />
+      <span>🌞 / 🌙</span>
+    </label>
+  </div>
+
+  <div class="calculator">
+    <div class="display" id="display">0</div>
+    <div class="buttons">
+      <button class="btn" data-action="clear">C</button>
+      <button class="btn" data-action="backspace">⌫</button>
+      <button class="btn" data-action="/">÷</button>
+      <button class="btn" data-action="*">×</button>
+
+      <button class="btn" data-action="7">7</button>
+      <button class="btn" data-action="8">8</button>
+      <button class="btn" data-action="9">9</button>
+      <button class="btn" data-action="-">−</button>
+
+      <button class="btn" data-action="4">4</button>
+      <button class="btn" data-action="5">5</button>
+      <button class="btn" data-action="6">6</button>
+      <button class="btn" data-action="+">+</button>
+
+      <button class="btn" data-action="1">1</button>
+      <button class="btn" data-action="2">2</button>
+      <button class="btn" data-action="3">3</button>
+      <button class="btn equal" data-action="=">=</button>
+
+      <button class="btn zero" data-action="0">0</button>
+      <button class="btn" data-action=".">.</button>
+    </div>
+  </div>
+
+  <footer class="footer">
+    Made with ❤️ by <strong>Kunal</strong>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: linear-gradient(135deg, #1f1c2c, #928dab);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.5s ease;
+  }
+  
+  body.light {
+    background: linear-gradient(135deg, #f0f0f0, #ffffff);
+  }
+  
+  .calculator {
+    width: 320px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    position: relative;
+    transition: all 0.5s;
+  }
+  
+  body.light .calculator {
+    background: rgba(255, 255, 255, 0.6);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  }
+  
+  .display {
+    height: 60px;
+    font-size: 2rem;
+    color: white;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 10px;
+    text-align: right;
+    padding: 10px;
+    margin-bottom: 15px;
+    overflow: hidden;
+    transition: color 0.3s, background 0.3s;
+  }
+  
+  body.light .display {
+    color: black;
+    background: rgba(0, 0, 0, 0.05);
+  }
+  
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  }
+  
+  .btn {
+    padding: 20px;
+    border: none;
+    font-size: 1.2rem;
+    color: white;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  
+  body.light .btn {
+    background: rgba(0, 0, 0, 0.05);
+    color: black;
+  }
+  
+  .btn:hover {
+    background: rgba(255, 255, 255, 0.3);
+  }
+  
+  .equal {
+    grid-row: span 2;
+    background: #ff6f61;
+  }
+  
+  .zero {
+    grid-column: span 2;
+  }
+  
+  .theme-toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 10;
+    font-size: 1.2rem;
+    color: white;
+  }
+  
+  .footer {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: white;
+  }
+  
+  body.light .footer {
+    color: #333;
+  }
+  
+  @media (max-width: 400px) {
+    .calculator {
+      width: 90%;
+    }
+  }
+  
