@@ -16,7 +16,7 @@ NeoCalc is a modern, mobile-friendly calculator with glassmorphism design, dark/
 - JavaScript
 
 ## 🎯 Author
-Made with ❤️ by [Kunal Sah]
+Made with ❤️ by [Kunal]
 
 ## 📦 Live Demo
 [👉 Click here to try NeoCalc online](https://hustler-kunal.github.io/CodeAlpha_Project_Modern-Calculator/)
